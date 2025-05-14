@@ -4,7 +4,7 @@ import cors from "cors";
 import { cadastraLead } from './servico/cadastroServico.js';
 import { validaUsuario } from './validacao/valida.js';
 
-const app = express();
+const app = new express();
 
 app.use(cors());
 app.use(express.json());
